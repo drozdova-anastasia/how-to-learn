@@ -34,9 +34,45 @@ section {
   margin-top: 80px;
 }
 
-.content__title {
-  margin: 0 auto;
-  text-align: center;
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns {
+  width: 80%;
+  border: 1px solid red;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: normal;
+  min-height: 1.2em;
+  margin: 0;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px
+}
+
+.two-columns__paragraph {
+  min-height: 34px;
+  font-size: 24px;
+  margin: 0;
+}
+
+.two-columns__paragraph_middle {
+  margin: 30px 0;
+}
+
+.two-columns__span {
+  font-weight: bold;
 }
 
 .feynman {
@@ -52,14 +88,16 @@ section {
   width: 648px;
   font-size: 120px;
   font-weight: bold;
-  margin-top: 100px;
+  margin: 100px auto 0;
+  text-align: center;
 }
 
 .feynman__subtitle {
   min-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin-top: 70px;
+  margin: 70px auto 0;
+  text-align: center;
 }
 
 .feynman__link {
