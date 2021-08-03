@@ -157,3 +157,47 @@ section {
   top: 50%;
   right: 48px;
 }
+
+.kaufman {
+  position: relative;
+  background-color: #1f1f1f;
+  margin: 90px 0 90px;
+  z-index: -2;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: -1;
+}
+
+.section-title_theme_dark {
+  color: #fff;
+  margin: 90px auto 0;
+}
+
+.section-subtitle_theme_dark {
+  color: #fff;
+  margin: 20px auto 0;
+}
+
+.table_theme_dark {
+  margin: 0 auto 90px;
+}
+
+.table__row_theme_dark {
+  margin: 80px auto 0;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+}
+
+.table__heading_theme_dark {
+  color: #fff;
+}
+
+.table__text_theme_dark {
+  color: #fff;
+}
