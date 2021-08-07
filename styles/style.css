@@ -13,31 +13,34 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* выше установили ограничения для секции */
 }
 
 .logo {
-  width: 183px;
-  height: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
+  width: 183px;
+  height: 32px;
+  background-image: url(../images/logo_place_header.svg);
 }
 
 .header__title {
   margin: 0;
   margin-left: 64px;
-  font-weight: bold;
-  min-height: 96px;
+  line-height: 96px;
   font-size: 102px;
+  font-weight: bold;
   width: 730px;
   z-index: 2;
 }
@@ -47,9 +50,9 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
-  font-weight: normal;
-  min-height: 25px;
+  line-height: 25px;
   font-size: 18px;
+  font-weight: normal;
   width: 388px;
   z-index: 2;
 }
@@ -59,7 +62,6 @@
   text-decoration: none;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -92,9 +94,9 @@
 .two-columns__brief {
   width: 175px;
   color: #2f80ed;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  min-height: 1.2em;
   margin: 0;
 }
 
@@ -104,65 +106,80 @@
 }
 
 .two-columns__paragraph {
-  min-height: 34px;
+  line-height: 34px;
   font-size: 24px;
+  font-weight: normal;
   margin: 0;
 }
 
-.two-columns__paragraph_middle {
+.two-columns__paragraph_middle { /*TODO: rename*/
   margin: 30px 0;
 }
 
-.two-columns__span {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
+.digits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .section-title {
-  min-height: 1.15em;
+  line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  margin: 100px auto 0;
-  width: 60%;
   text-align: center;
+  margin: 0;
+}
+
+.section-title_theme_light {
+  width: 60%;
+  margin-top: 100px;
 }
 
 .section-subtitle {
   min-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 20px auto 0;
-  width: 60%;
   text-align: center;
+  margin: 0;
+}
+
+.section-subtitle_theme_light {
+  width: 60%;
+  margin-top: 20px;
 }
 
 .table {
   width: 1100px;
-  margin: 0 auto 100px;
-}
-
-.table__row {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 0;
+  flex-wrap: wrap;
+}
+
+.table_theme_light {
+  margin: 0 auto 100px;
 }
 
 .table__cell {
   width: 250px;
-  padding: 0;
+  margin: 60px 0 0;
 }
 
 .table__heading {
-  min-height: 1,15em;
+  line-height: 1.15;
   font-size: 24px;
-  margin: 0;
   font-weight: bold;
+  margin: 0;
 }
 
 .table__text {
-  min-height: 1,2em;
+  line-height: 1.2;
   font-size: 18px;
-  margin: 20px 0 0;
   font-weight: normal;
+  margin: 20px 0 0;
 }
 
 .feynman {
@@ -175,16 +192,16 @@
 }
 
 .feynman__title {
-  min-height: 1.15em;
-  width: 648px;
+  line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  margin: 100px auto 0;
+  width: 648px;
+  margin: 100px auto 0;  /*TODO: top*/
   text-align: center;
 }
 
 .feynman__subtitle {
-  min-height: 51px;
+  line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   margin: 70px auto 0;
@@ -192,7 +209,7 @@
 }
 
 .feynman__link {
-  min-height: 75px;
+  line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
@@ -207,6 +224,9 @@
   background-color: #1f1f1f;
   z-index: -2;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .kaufman__triangle {
@@ -216,32 +236,31 @@
   top: 0;
   right: -210px;
   z-index: -1;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-title_theme_dark {
   color: #fff;
-  margin: 90px auto 0;
+  width: 60%;
+  margin-top: 90px;
 }
 
 .section-subtitle_theme_dark {
   color: #fff;
-  margin: 20px auto 0;
+  width: 60%;
+  margin-top: 20px;
 }
 
 .table_theme_dark {
   margin: 0 auto 90px;
 }
 
-.table__row_theme_dark {
-  margin: 80px auto 0;
-}
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
-  /*margin-top: 80px;*/
+  margin: 60px 0 0;
 }
 
 .table__heading_theme_dark {
@@ -289,6 +308,7 @@
 .logo_place_footer {
   width: 183px;
   height: 32px;
+  background-image: url(../images/logo_place_footer.svg);
 }
 
 .footer__column_content_info {
