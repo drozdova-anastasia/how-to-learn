@@ -36,8 +36,8 @@
 }
 
 .header__title {
-  margin: 0;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
+  padding: 0;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -47,6 +47,7 @@
 
 .header__subtitle {
   margin: 0;
+  padding: 0;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -98,6 +99,7 @@
   font-size: 18px;
   font-weight: normal;
   margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text {
@@ -110,6 +112,7 @@
   font-size: 24px;
   font-weight: normal;
   margin: 0;
+  padding: 0;
 }
 
 .two-columns__paragraph_type_conclusion {
@@ -132,23 +135,25 @@
   font-weight: bold;
   text-align: center;
   margin: 0;
+  padding: 0;
+  width: 60%;
 }
 
 .section-title_theme_light {
-  width: 60%;
   margin-top: 100px;
 }
 
 .section-subtitle {
-  min-height: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
   margin: 0;
+  padding: 0;
+  width: 60%;
 }
 
 .section-subtitle_theme_light {
-  width: 60%;
   margin-top: 20px;
 }
 
@@ -173,6 +178,7 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0;
+  padding: 0;
 }
 
 .table__text {
@@ -180,6 +186,7 @@
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0 0;
+  padding: 0;
 }
 
 .feynman {
@@ -189,6 +196,7 @@
   background-image: url(../images/feynman.png);
   background-position: bottom left;
   background-repeat: no-repeat;
+  background-size: 867px 637px;
 }
 
 .feynman__title {
@@ -196,7 +204,7 @@
   font-size: 120px;
   font-weight: bold;
   width: 648px;
-  padding-top: 100px;
+  padding: 100px 0 0;
   margin: 0 auto 0;
   text-align: center;
 }
@@ -207,6 +215,7 @@
   font-weight: normal;
   margin: 70px auto 0;
   text-align: center;
+  padding: 0;
 }
 
 .feynman__link {
@@ -218,6 +227,7 @@
   top: 50%;
   right: 48px;
   text-decoration: none;
+  padding: 0;
 }
 
 .kaufman {
@@ -244,13 +254,11 @@
 
 .section-title_theme_dark {
   color: #fff;
-  width: 60%;
   margin-top: 90px;
 }
 
 .section-subtitle_theme_dark {
   color: #fff;
-  width: 60%;
   margin-top: 20px;
 }
 
@@ -298,18 +306,19 @@
   flex-basis: 711px;
 }
 
-.footer__author {
-  margin: 18px 0;
-  color: #fff;
-  font-size: 18px;
-  min-height: 25px;
-  font-weight: normal;
-}
-
 .logo_place_footer {
   width: 183px;
   height: 32px;
   background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__author {
+  margin: 18px 0;
+  color: #fff;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
 }
 
 .footer__column_content_info {
@@ -319,8 +328,8 @@
 .footer__column-heading {
   margin: 0 0 20px;
   color: #fff;
+  line-height: 30px;
   font-size: 18px;
-  min-height: 30px;
   font-weight: bold;
 }
 
@@ -333,9 +342,11 @@
 .footer__column-link {
   color: #fff;
   text-decoration: none;
+  line-height: 30px;
   font-size: 18px;
-  min-height: 30px;
   font-weight: normal;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__social-icon {
