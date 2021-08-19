@@ -1,0 +1,6 @@
+.resources {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0 217px;
+}
